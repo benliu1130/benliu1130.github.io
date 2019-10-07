@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="Wei-Ming Liu" />
+<meta name="keywords" content="Wei-Ming Liu,weiming" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Wei-Ming Liu's Home Page</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="container">
+<div id="header"><div id="logo"><a href="index.html">Wei-Ming Liu's Home Page</a></div><div id="slogan"><br/>Ben's CS World</div></div>
+<div id="header_menu"><a href="index.html">Home</a> &nbsp; | &nbsp; <a href="about.html">About Me</a> &nbsp; | &nbsp; <a href="projects.html">My Projects</a> &nbsp; | &nbsp; <a href="resume.html">Resume</a> &nbsp; | &nbsp; <a href="contact.html">Contact</a></div>
+<div id="main" class="main_no_sidebar">
+<div id="text" class="text_no_sidebar">
+<h1>Computer Vision</h1>
+<br/>
+<table class="left">
+<tr><td width="100"><b>Course:</b></td><td>CSC 508 - Computer Vision (California Lutheran University)</td></tr>
+<tr><td width="100"><b>Instructor:</b></td><td>Craig Reinhart</td></tr>
+<tr><td width="100"><b>Project:</b></td><td>Pip Counting for Dices</td></tr>
+<tr><td width="100"><b>Language:</b></td><td>Java</td></tr>
+</table>
+<br/>
+<p class="center">
+The goal is to design a computer vision system which reports the pip count of upward faces for dices in a given picture.
+</p>
+<br/>
+<table class="center">
+<tr>
+<td><img src="images/508_01.jpg"/></td><td><img src="images/508_02.jpg"/></td><td><img src="images/508_03.jpg"/></td>
+</tr>
+<tr>
+<td>14</td><td>14</td><td>6</td>
+</tr>
+</table>
+<p class="center">
+First, Sobel operator is applied to detect edges.
+</p>
+<table class="center">
+<tr>
+<td><img src="images/508_04.jpg"/></td><td><img src="images/508_05.jpg"/></td><td><img src="images/508_06.jpg"/></td>
+</tr>
+</table>
+<br/>
+<p class="center">
+Next, Hough Transform is used to find straight lines.
+</p>
+<table class="center">
+<tr>
+<td><img src="images/508_07.jpg"/></td><td><img src="images/508_08.jpg"/></td><td><img src="images/508_09.jpg"/></td>
+</tr>
+</table>
+<br/>
+<p class="center">
+Then it analyzes orientation of these straight lines to find squares. The image in each square is compared with several pre-generated patterns. It assumes the pop count of the best matched pattern as the pop count of the die.
+</p>
+</div>
+</div>
+<div id="footer_menu"><a href="index.html">Home</a> &nbsp; | &nbsp; <a href="about.html">About Me</a> &nbsp; | &nbsp; <a href="projects.html">My Projects</a> &nbsp; | &nbsp; <a href="resume.html">Resume</a> &nbsp; | &nbsp; <a href="contact.html">Contact</a></div>
+<div id="footer">Copyright 2009 Your Website. Design by <a href="http://www.ondieting.co.uk/">On Dieting</a>.</div>
+</div>
+<noscript/>
+</body>
+</html>
